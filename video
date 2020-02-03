@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<style>
+  
+  
+#myVideo {
+  position: relative;
+  width: 300px; 
+  height: 150px;
+  z-index 999999 !important;
+  
+}
+  
+</style>
+</head>
+
+
+<body>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<video autoplay muted loop id="myVideo">
+  <source src="https://media.usinenouvelle.com/GlobalVisuels/CEGID/cegid.mp4" type="video/mp4">
+</video>
+</body>
+
+</html>
